@@ -1,0 +1,78 @@
+
+/*****/
+/*   */
+/*****/
+.container {
+  display: flex;
+  background-color: DodgerBlue;
+  width: 400px;
+  height: 400px;
+  
+  justify-content: flex-start;
+  
+/*  
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+*/
+
+
+  
+}
+
+.container > div {
+  background-color: grey;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+
+/*****/
+/*   */
+/*****/
+div[name="rowDiv"] {
+	flex-direction: row;
+}
+
+div[name="rowRDiv"] {
+	flex-direction: row-reverse;
+}
+
+div[name="colDiv"] {
+	flex-direction: column;
+}
+
+div[name="colRDiv"] {
+	flex-direction: column-reverse;
+}
+
+div[name="wrapDiv"] {
+	flex-wrap: wrap; /* Comportamiento por defecto: nowrap */
+	/* align-content: center; */
+	align-items: center;
+  
+/*  
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly;
+*/
+
+/*  
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch;
+  align-items: baseline;
+*/
+
+
+}
+
+	

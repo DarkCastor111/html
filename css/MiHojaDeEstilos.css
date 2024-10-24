@@ -1,0 +1,66 @@
+
+/*****/
+/* Definicion de una fuente personalizada */
+/*****/
+@font-face {
+	font-family: 'miFuente';
+	src: url('Bauhaus.ttf');
+}
+pre{
+	font:bold 12px 'miFuente';
+}
+
+/*****/
+/* Declaración . = class */
+/*****/
+.miClase{
+	color: green;
+}
+
+/*****/
+/* Declaración # = id */
+/*****/
+#nombre_del_marcador {
+	color: rgb(42,44,156)
+}
+
+/*****/
+/* Transparencia */
+/*****/
+#p1 {background-color: rgba(255, 0,   0,   0.3);} /*Rojo con transparencia*/
+#p2 {background-color: rgba(0,   255, 0,   0.3);} /*Verde con transparencia*/ 
+#p3 {background-color: rgba(0,   0,   255, 0.3);} /*Azul con transparencia*/
+
+/*****/
+/* Degradado */
+/*****/
+div[name="div1"] {
+background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+div[name="div2"] {
+background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+}
+div[name="div3"] {
+background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
+}
+div[name="div4"] {
+background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+}
+div[name="div5"] {
+background: linear-gradient(to top,#33ccff 0%, #ff99cc 100%);
+}
+div[name="div6"] {
+background: linear-gradient(to left,#33ccff 0%, #ff99cc 100%);
+}
+div[name="div7"] {
+background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
+}
+div[name="div8"] {
+background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
+}
+
+/*****/
+/* Vínculos */
+/*****/
+a:visited{color:lightblue}
+
