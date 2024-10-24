@@ -1,11 +1,11 @@
-#titulo{
+#titulo {
 	text-align: center;
 	font-size: 40px;
 	background-color: coral;
-	background: linear-gradient(top, gray, rgb(124,210,212));
-	background: -webkit-linear-gradient(top, coral, rgb(124,210,212));
-	background: -ms-linear-gradient(top, red, rgb(124,210,212));
-	background: -o-linear-gradient(top, blue, rgb(124,210,212));
+	background: linear-gradient(top, gray, rgb(124, 210, 212));
+	background: -webkit-linear-gradient(top, coral, rgb(124, 210, 212));
+	background: -ms-linear-gradient(top, red, rgb(124, 210, 212));
+	background: -o-linear-gradient(top, blue, rgb(124, 210, 212));
 	width: 50%;
 	border-radius: 30px;
 	margin: 40px;
@@ -14,7 +14,8 @@
 	box-shadow: grey 50px 15px 15px;
 	text-shadow: black 2px 2px 2px;
 }
-.imagen{
+
+.imagen {
 	width: 200px;
 	height: 300px;
 	padding: 4px;

@@ -34,7 +34,7 @@ console.log("//var : Variable Globale");
 console.log("//--------------------------------------");
 document.write("<h1>var : Variable Globale</h1>");
 var num_var = 5;
-console.log("La variable num_var es: " + typeof(num_var));
+console.log("La variable num_var es: " + typeof (num_var));
 document.write("<p>num_var es :" + num_var + "</p>"); //num_var vale 5
 if (true) {
 	num_var = 10;
@@ -47,7 +47,7 @@ console.log("//let : Variable Locale");
 console.log("//--------------------------------------");
 document.write("<h1>let : Variable Locale</h1>");
 let num_let = "5";
-console.log("La variable num_let es: " + typeof(num_let));
+console.log("La variable num_let es: " + typeof (num_let));
 document.write("<p>num_let es :" + num_let + "</p>"); //num_let vale 5
 if (true) {
 	let num_let = "10";
@@ -59,9 +59,9 @@ document.write("<p>num_let es :" + num_let + "</p>"); //num_let vale 5
 console.log("//--------------------------------------");
 console.log("//Casting de variable");
 num_total1 = num_var + num_let;
-console.log("La variable num_total1 es: " + typeof(num_total1) + " y es = " + num_total1);
+console.log("La variable num_total1 es: " + typeof (num_total1) + " y es = " + num_total1);
 num_total2 = num_var + parseInt(num_let);
-console.log("La variable num_total2 es: " + typeof(num_total2) + " y es = " + num_total2);
+console.log("La variable num_total2 es: " + typeof (num_total2) + " y es = " + num_total2);
 
 console.log("//--------------------------------------");
 console.log("//1. Declarión de variables");
@@ -79,7 +79,7 @@ _numero = 63;
 //Variable declara e inicializada
 var numero4 = 647;
 // Sepueden declara e inicializar varias variables a la vez.
-var a=3, b=4, c=5;
+var a = 3, b = 4, c = 5;
 //Sería lo mismo que poner:
 /*
 var a=3;
@@ -95,7 +95,7 @@ console.log("La variable 'Numero' vale:" + Numero);
 var sumando1 = 35;
 var sumando2 = 45;
 
-var resultado = sumando1+sumando2;
+var resultado = sumando1 + sumando2;
 console.log("El resultado de sumar " + sumando1 + " + " + sumando2 + " es " + resultado);
 
 // Operador modulo o resto de la división
@@ -110,7 +110,7 @@ console.log("El operador incremento sobre numeroInicial daría " + numeroIncreme
 console.log("Valor de numeroInicial " + numeroInicial);
 //IMPORTANTE: No es lo mismo ++variable que variable++
 var numero5 = 5;
-document.write("El número antes del incremento vale " + numero5++); 
+document.write("El número antes del incremento vale " + numero5++);
 document.write("<br>");
 document.write("El número después del incremento vale " + numero5);
 document.write("<br>");
@@ -165,11 +165,11 @@ console.log("//--------------------------------------");
 document.write("<h1>3. Funciones de strings</h1>");
 console.log("//toString()");
 console.log("//--------------------------------------");
-var num3_1=3;
-var num3_2=6;
+var num3_1 = 3;
+var num3_2 = 6;
 
-var num_string1=num3_1.toString();
-var num_string2=num3_2.toString();
+var num_string1 = num3_1.toString();
+var num_string2 = num3_2.toString();
 
 console.log("(num3_1 + num3_2) = " + (num3_1 + num3_2));
 console.log("num3_1 + num3_2 = " + num3_1 + num3_2);
@@ -187,13 +187,13 @@ console.log("testUpperCaseString.length = " + testUpperCaseString.length);
 
 console.log("//indexOf(), lastIndexOf()");
 console.log("//--------------------------------------");
-var texto="Esto es el texto, que contiene muchos textos, y otros textos";
-var busqueda1= texto.indexOf("texto");
-var busqueda2= texto.lastIndexOf("texto");
+var texto = "Esto es el texto, que contiene muchos textos, y otros textos";
+var busqueda1 = texto.indexOf("texto");
+var busqueda2 = texto.lastIndexOf("texto");
 console.log("texto.indexOf : primera position texto = " + busqueda1);
 console.log("texto.lastIndexOf : última position texto = " + busqueda2);
 
-console.log("texto.substr(14,5) = " + texto.substr(14,5));
+console.log("texto.substr(14,5) = " + texto.substr(14, 5));
 console.log("texto.charAt(44) = " + texto.charAt(44));
 
 console.log("texto.startsWith('Hola') = " + texto.startsWith("Hola"));
@@ -209,9 +209,9 @@ console.log("texto.split(' ') = " + texto.split(" "));
 console.log("//Plantillas en String");
 console.log("//--------------------------------------");
 
-var nombre_plantilla="Pablo";
-var apellido_plantilla="Hernando";
-var plantilla3= `
+var nombre_plantilla = "Pablo";
+var apellido_plantilla = "Hernando";
+var plantilla3 = `
 <h3>Tu nombre es ${nombre_plantilla}</h3>
 <h3> y tus apellido es ${apellido_plantilla}</h3>
 `;
@@ -226,14 +226,14 @@ console.log("//for");
 console.log("//--------------------------------------");
 document.write("<h2>Bucle for</h1>");
 var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-for(var i=0;i<meses.length;i++){
-	document.write("Hola"+"<br>"+ "En esta vuelta de bucle i vale " + i + "<br>");
+for (var i = 0; i < meses.length; i++) {
+	document.write("Hola" + "<br>" + "En esta vuelta de bucle i vale " + i + "<br>");
 	document.write(meses[i] + "<br><br>");
 }
 document.write("Ejecución terminada.");
 document.write("<h2>Bucle foreach</h1>");
 document.write("<ul>");
-meses.forEach((elemento, index) => {document.write("<li>" + index + " - "+ elemento + "</li>");});
+meses.forEach((elemento, index) => { document.write("<li>" + index + " - " + elemento + "</li>"); });
 document.write("</ul>");
 console.log("//while");
 console.log("//--------------------------------------");
@@ -265,10 +265,10 @@ console.log("//--------------------------------------");
 document.write("<h1>5. Arrays</h1>");
 var articulos = ["balon", "botas", "camiseta", "pantalon"];
 document.write("<p>articulos : " + articulos + "<p>");
-document.write("<p>El primer articulo es <strong>"+ articulos[0] +"</strong></p > ");
+document.write("<p>El primer articulo es <strong>" + articulos[0] + "</strong></p > ");
 document.write("<h2>length</h2>");
 document.write("<p>La longitud del array es " + articulos.length + "</p>");
-document.write("<p>El último articulo es <strong>" + articulos[articulos.length- 1] + "</strong></p><br>");
+document.write("<p>El último articulo es <strong>" + articulos[articulos.length - 1] + "</strong></p><br>");
 document.write("<h2>Añadir elementos: unshift(elt), push(elt)</h2>");
 document.write("<p>Añadimos los artículos pelota y canasta al principio unshift y al final push</p>");
 articulos.unshift("pelota");
@@ -286,7 +286,7 @@ document.write("<p>articulos : _" + articulos.join() + "_<p>");
 
 document.write("<h2>String to Array : split(sep)</h2>");
 var cadena = "nombre1,nombre2,nombre3";
-var miStringToArray=cadena.split(",");
+var miStringToArray = cadena.split(",");
 document.write("<p>miStringToArray : _" + miStringToArray.join() + "_<p>");
 
 document.write("<h2>ordenar : sort(), reverse()</h2>");
@@ -297,12 +297,12 @@ document.write("<h2>busqueda : find(fn), findIndex(fn), some(fn)</h2>");
 //var nombreBuscado = "pastor";
 var nombreBuscado = "canasta";
 //var busqueda = articulos.find(function(nombre){return nombre==nombreBuscado;});
-var busqueda=articulos.find(nombre => {return nombre==nombreBuscado;});
-document.write("<p>articulos.find(..."+ nombreBuscado + ") : _" + busqueda + "_<p>");
-var busIndice = articulos.findIndex(nombre => {return nombre==nombreBuscado;});
-document.write("<p>articulos.findIndex(..."+ nombreBuscado + ") : _" + busIndice + "_<p>");
-var busSome = articulos.some(nombre => {return nombre<nombreBuscado;});
-document.write("<p>articulos.some(..."+ nombreBuscado + ") : _" + busSome + "_<p>");
+var busqueda = articulos.find(nombre => { return nombre == nombreBuscado; });
+document.write("<p>articulos.find(..." + nombreBuscado + ") : _" + busqueda + "_<p>");
+var busIndice = articulos.findIndex(nombre => { return nombre == nombreBuscado; });
+document.write("<p>articulos.findIndex(..." + nombreBuscado + ") : _" + busIndice + "_<p>");
+var busSome = articulos.some(nombre => { return nombre < nombreBuscado; });
+document.write("<p>articulos.some(..." + nombreBuscado + ") : _" + busSome + "_<p>");
 
 console.log("//--------------------------------------");
 console.log("//6. Funciones");
@@ -311,9 +311,9 @@ console.log("//--------------------------------------");
 console.log("//Tipo de una funcion");
 console.log("//--------------------------------------");
 var libro = {
-	titulo:'Las Legiones Malditas',
-	autor:'Santiago Posterguillo',
-	informacion:function(){ return this.titulo + " escrito por " + this.autor;}
+	titulo: 'Las Legiones Malditas',
+	autor: 'Santiago Posterguillo',
+	informacion: function () { return this.titulo + " escrito por " + this.autor; }
 }
 console.log(typeof libro.informacion);
 
@@ -321,7 +321,7 @@ function fecha() {
 	document.write(Date());
 }
 
-function writeNumeros(num1, num2,...otros){
+function writeNumeros(num1, num2, ...otros) {
 	document.write("writeNumeros(num1, num2,...otros) :<br>")
 	document.write("num1 = " + num1 + "<br>");
 	document.write("num2 = " + num2 + "<br>");
@@ -332,17 +332,17 @@ console.log("//Callback");
 console.log("//--------------------------------------");
 
 // Definición de la función principal
-function funcionPrincipal(_callback){
+function funcionPrincipal(_callback) {
 	console.log('hago algo y llamo al callback avisando que terminé');
 	_callback('Miguel');
 }
 // LLamada de la funcion principal con la funcion callback en parametro
-funcionPrincipal(function(nombre){
-		console.log('me llamo ' + nombre);
+funcionPrincipal(function (nombre) {
+	console.log('me llamo ' + nombre);
 });
 console.log("//--------------------------------------");
 console.log("//funcionPrincipal2");
-function funcionPrincipal2(_callback1, _callback2, _callback3){
+function funcionPrincipal2(_callback1, _callback2, _callback3) {
 	//
 	console.log("código de la función principal...");
 	//
@@ -360,13 +360,13 @@ function funcionPrincipal2(_callback1, _callback2, _callback3){
 	//
 }
 
-function callback21(){
+function callback21() {
 	console.log('primer callback');
 }
-function callback22(){
+function callback22() {
 	console.log('segundo callback');
 }
-function callback23(){
+function callback23() {
 	console.log('tercer callback');
 }
 // LLamada de la funcion principal con las funciones callback en parametro
@@ -375,27 +375,27 @@ funcionPrincipal2(callback21, callback22, callback23);
 console.log("//--------------------------------------");
 console.log("//funcionPrincipal3 : setInterval()");
 
-function funcionPrincipal3(_callback1, _callback2, _callback3){
+function funcionPrincipal3(_callback1, _callback2, _callback3) {
 	//código de la función principal
 	_callback1();
 	//más código de la función principal
-	var miVar = setInterval(function(){ _callback2() },1000);
+	var miVar = setInterval(function () { _callback2() }, 1000);
 	//más código de la función principal
-	var miVar2 =setInterval(function(){ _callback3() },3000);
+	var miVar2 = setInterval(function () { _callback3() }, 3000);
 	//más código si fuera necesario
 }
 
-function callback31(){
+function callback31() {
 	console.log("//llamada callback31");
 }
-function callback32(){
+function callback32() {
 	//console.log("//llamada callback32");
 	var d = new Date();
 	var t = d.toLocaleTimeString();
 	document.getElementById("setInterval1000").innerHTML = "Date : " + t;
 }
 
-function callback33(){
+function callback33() {
 	//console.log("//llamada callback33");
 	document.getElementById("setInterval3000").innerHTML = 'Esto es el callback33';
 }
@@ -410,18 +410,18 @@ function funcionPrincipal4(num1, num2, sumaYmuestra, sumaPorDos) {
 	return suma;
 }
 
-funcionPrincipal4(5, 7, _dato =>	{
-							console.log('La suma es ', _dato);
-						},
-						_dato2 => {
-							console.log('La suma de dos es :', (_dato2 * 2));
-						});
+funcionPrincipal4(5, 7, _dato => {
+	console.log('La suma es ', _dato);
+},
+	_dato2 => {
+		console.log('La suma de dos es :', (_dato2 * 2));
+	});
 
 console.log("//--------------------------------------");
 console.log("//7. Events");
 console.log("//--------------------------------------");
-						
-function button1Onclick(){
+
+function button1Onclick() {
 	var x = 30;
 	window.alert(x);
 	//document.body.style.backgroundColor = 'red';
